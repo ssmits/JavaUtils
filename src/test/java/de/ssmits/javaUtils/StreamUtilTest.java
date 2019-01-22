@@ -41,8 +41,8 @@ public class StreamUtilTest {
 
         // When
         final List<Stream<String>> result = StreamUtil
-        	.chunkedStream(testData, 237)
-        	.collect(Collectors.toList());
+            .chunkedStream(testData, 237)
+            .collect(Collectors.toList());
 
         assertThat(result).isNotNull();
         assertThat(result).hasSize(1);
