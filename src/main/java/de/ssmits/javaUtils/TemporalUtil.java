@@ -30,9 +30,9 @@ public class TemporalUtil {
      */
     public static final LocalDateTime convertUtcToDestinationTimeZone(LocalDateTime utcDateTime, ZoneId destinationTimeZone) {
         return ZonedDateTime
-        	.of(utcDateTime, ZoneId.of("UTC+00:00"))
-        	.withZoneSameInstant(destinationTimeZone)
-        	.toLocalDateTime();
+            .of(utcDateTime, ZoneId.of("UTC+00:00"))
+            .withZoneSameInstant(destinationTimeZone)
+            .toLocalDateTime();
     }
 
     /**
